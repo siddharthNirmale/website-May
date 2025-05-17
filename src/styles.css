@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #1A1A1A;
+  color: #16205F;
   background-color: #fff;
   line-height: 1.5;
 }
@@ -34,7 +34,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 /* Logo */
@@ -61,7 +61,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  color: #000000;
+  color: #16205F;
   transition: color 0.3s ease;
   font-family: 'Poppins', sans-serif;
 }
@@ -103,7 +103,8 @@ img {
 }
 
 .cta-button:hover {
-  background: #1a1052;
+  background: linear-gradient(to right, #ED7901, #FCB81F);
+  border: none;
   color: white;
 }
 
@@ -519,60 +520,61 @@ img {
   display: flex;
   justify-content: center;
   padding: 40px;
-  background-color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  
 }
 
 .contact-wrapper {
-  max-width: 1513px;
-  width: 100%;
+ 
+
 }
 
 .contact-container {
   display: flex;
-  width: 100%;
-  background: #fff;
-  border-radius: 20px;
-  
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  max-width: 1513px; /* updated */
 }
 
 .contact-image {
-  
-  
   width: 1000;
 }
 
 .contact-image img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
+  position: relative;
+  left: 00px;
 }
 
 .contact-form {
   flex: 1;
   padding: 40px;
-  background-color: #f9faff;
-  z-index: -1;
-  top: -15px;
-  height: 1000px;
+  background-color: #ffffff;
+  z-index: 1;
+  top: 130px;
+  height: 700px;
+  position: relative;
+  right: 200px;
+  border-radius: 100px 0 0 0 ;
+  
 }
 
 .contact-form h2 {
   font-size: 24px;
-  color: #0c1244;
+  color: #16205F;
   margin-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  
 }
 
-.contact-form .highlight {
-  color: #0c1244;
-  font-weight: bold;
-}
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-left: 20px;
+  
 }
 
 .contact-form .row {
@@ -583,10 +585,10 @@ img {
 .contact-form input,
 .contact-form textarea {
   flex: 1;
-  padding: 12px 15px;
-  border: 1px solid #ddd;
+  padding: 20px 15px;
+  border: 1px solid #C5E0FF;
   border-radius: 8px;
-  font-size: 14px;
+  font-size:10px
 }
 
 .contact-form textarea {
@@ -609,16 +611,155 @@ img {
 
 .contact-form button {
   padding: 12px;
-  background: #f9a826;
+  background: linear-gradient(to right, #ED7901, #FCB81F);
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-form button:hover {
   background: #f28c00;
 }
+
+.full-width{
+  width: 100%;
+}
+
+.input-group{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: #16205F;
+  font-weight: bold;
+  
+}
+
+#project{
+   flex: 1;
+    padding: 50px 15px;
+    border: 1px solid #C5E0FF;
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.checkbox{
+  color: #16205F;
+  font-size: x-small;
+}
+.policy-link{
+  font-weight: bold;
+}
+
+.submit-btn{
+  width: 310px;
+  height: 54px;
+}
+
+
+.footer-wrapper {
+  max-width: 1513px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  
+  padding: 50px 0 20px;
+  color: #16205F;;
+
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.brand {
+  flex: 1.5;
+}
+
+.logo {
+  height: 50px;
+}
+
+.brand-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+
+.tagline {
+  color: #16205F;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  line-height: 1.4;
+}
+
+.contact-info i {
+  color: #16205F;
+  margin-right: 8px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.footer-column h3 {
+  color: #16205F;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  display: block;
+  color: #16205F;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: orange;
+}
+
+.follow-us {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #16205F;
+  position: relative;
+  right: 30px;
+}
+
+.social-icons a {
+  color: #16205F;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #C4C4C4;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #16205F;
+ text-align: center;
+}
+
 
